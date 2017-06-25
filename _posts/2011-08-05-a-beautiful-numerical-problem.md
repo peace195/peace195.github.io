@@ -1,7 +1,7 @@
 ----		
- -layout: post		
- -title: A beautiful numerical problem	
- ----
+title: A beautiful numerical problem	
+----
+
 I am used to solve a lot of Mathematical Olympiad problems but the most rememberable problem that I love is a numerical problem. It took me three hours to solve it. Why is it beautiful.? Because it is solved by some beautiful techniques:
 
 * [Reduce to absurdity](https://en.wikipedia.org/wiki/Reductio_ad_absurdum)
