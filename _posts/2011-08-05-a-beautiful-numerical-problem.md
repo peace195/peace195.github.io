@@ -14,7 +14,7 @@ Consider that $$a,b,c$$ are natural numbers,$$a,b $$ are different from $$c $$. 
 
 ## Proof
 
-Consider that  $$(a,b,c)=1$$ because if $$(a, b, c) = q$$,  we have a new sub-problem $$(a', b', c')$$ where $$a' = \frac{a}{q}, b' = \frac{b}{q}, c' = \frac{c}{q}$$.
+Consider that  $$ (a,b,c)=1 $$ because if $$ (a, b, c) = q $$,  we have a new sub-problem $$(a', b', c')$$ where $$a' = \frac{a}{q}, b' = \frac{b}{q}, c' = \frac{c}{q}$$.
 
 Assuming that the set the prime divisors of $$a^n+b^n-c^n $$ is limited and it is difined as $$X=\{p_1,p_2,...,p_k \}$$.
 
