@@ -24,7 +24,7 @@ $$c^n \equiv 1 \pmod {p_i}$$
 
 Hence $$a^n+b^n-c^n \equiv 1 \pmod {p_i}$$. Contradictory!
 
-So that exist some numbers $$i \in (1,2,....,k) $$ that $ p_i | a $ , $$ p_i | b $$ or $$ p_i | c $$
+So that exist some numbers $$i \in (1,2,....,k) $$ that $$p_i | a $$ , $$p_i | b $$ or $$p_i | c $$
 
 We define:
 $$A=\{i ; p_i |a \} $$
