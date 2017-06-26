@@ -28,7 +28,7 @@ $$c^n \equiv 1 \pmod {p_i}$$
 
 Hence $$a^n+b^n-c^n \equiv 1 \pmod {p_i}$$. Contradictory!
 
-So that exist some numbers $$i \in (1,2,....,k) $$ that $$p_i | a;p_i|b $$ or $$p_i|c$$
+So that exist some numbers $$i \in (1,2,....,k) $$ that $$ p_i | a $$ , $$ p_i | b $$ or $$ p_i | c $$
 
 We define:
 $$A=\{i ; p_i |a \} $$
@@ -38,23 +38,25 @@ $$B=\{i ;p_i |b \} $$
 $$C=\{i ; p_i |c \}$$
 
 Apply Lifing expoinment lemma, we can choose $$n_1 $$ big enough so that: 
+
 $$v_{p_i}(b^{n_1}-c^{n_1}) < v_{p_i}(a^{n_1}) (i \in A)$$
+
 $$\Rightarrow a^{n_1}+b^{n_1}-c^{n_1}= \prod_{i \in A}p_i^{v_{p_i}(b^{n_1}+c^{n_1})}(P_1-Q_1)$$
 
-where $$p_i|P_1;p_i \not| Q_1 $$ với $$i \in A$$
+where $$ p_i | P_1;p_i \not| Q_1 $$ với $$i \in A$$
 
 
 Similar as the thing above, exist $$n_2 $$ so that:
 
 $$ a^{n_2}+b^{n_2}-c^{n_2}= \prod_{i \in B}p_i^{v_{p_i}(a^{n_2}-c^{n_2})}(P_2-Q_2)$$
 
-where $$p_i|P_2;p_i \not| Q_2 $$ for $$i \in B$$
+where $$ p_i | P_2;p_i \not| Q_2 $$ for $$i \in B$$
 
 And exist $$n_3 $$ so that:
 
 $$a^{n_3}+b^{n_3}-c^{n_3}= \prod_{i \in C}p_i^{v_{p_i}(a^{n_3}+b^{n_3})}(P_3-Q_3)$$
 
-where $$p_i|P_3;p_i \not| Q_3 $$ for $$i \in C $$
+where $$ p_i | P_3;p_i \not| Q_3 $$ for $$i \in C $$
 
 Finally, choose:
 
@@ -64,8 +66,8 @@ We have $$a^n+b^n-c^n $$ could be written:
 
 $$\prod{p_i}^{\alpha_i}(P-Q)$$
 
-where $$\alpha_i \ge 1 (i \in A,B,C) $$ and $$p_i \not| P-Q (i=1,2,...,k)$$
+where $$\alpha_i \ge 1 (i \in A,B,C) $$ and $$ p_i \not| P-Q (i=1,2,...,k) $$
 
-$$\Rightarrow $$ Exist a prime number $$q \not\in X $$ that satisfies $$q|P-Q|a^n+b^n-c^n$$.
+$$\Rightarrow $$ Exist a prime number $$q \not\in X $$ that satisfies $$ q|P-Q|a^n+b^n-c^n $$.
 
 This is a contradiction. The problem is solved.
