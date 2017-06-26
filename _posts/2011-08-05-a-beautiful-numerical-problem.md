@@ -6,7 +6,7 @@ I am used to solve a lot of Mathematical Olympiad problems but the most remember
 * Some simple numerical inferences
  
 ## Problem 
-Consider that $$a,b,c$$ are natural numbers,$$a,b $$ are different from $$c $$. Show that there exists infinitely prime number $$p $$ such that exists an integer $$n$$ to satisfy $$p | a^n+b^n-c^n$$  
+Consider that $$a,b,c$$ are natural numbers, $$a,b $$ are different from $$c $$. Show that there exists infinitely prime number $$p $$ such that exists an integer $$n$$ to satisfy $$p | a^n+b^n-c^n$$  
 
 ## Proof
 
