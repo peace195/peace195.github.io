@@ -1,7 +1,3 @@
-----		
-title: A beautiful numerical problem	
-----
-
 I am used to solve a lot of Mathematical Olympiad problems but the most rememberable problem that I love is a numerical problem. It took me three hours to solve it. Why is it beautiful.? Because it is solved by some beautiful techniques:
 
 * [Reduce to absurdity](https://en.wikipedia.org/wiki/Reductio_ad_absurdum)
@@ -28,7 +24,7 @@ $$c^n \equiv 1 \pmod {p_i}$$
 
 Hence $$a^n+b^n-c^n \equiv 1 \pmod {p_i}$$. Contradictory!
 
-So that exist some numbers $$i \in (1,2,....,k) $$ that $$ p_i | a $$ , $$ p_i | b $$ or $$ p_i | c $$
+So that exist some numbers $$i \in (1,2,....,k) $$ that $ p_i | a $ , $$ p_i | b $$ or $$ p_i | c $$
 
 We define:
 $$A=\{i ; p_i |a \} $$
