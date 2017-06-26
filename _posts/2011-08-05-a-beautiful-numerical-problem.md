@@ -14,7 +14,7 @@ Consider that  $$ (a,b,c)=1 $$ because if $$ (a, b, c) = q $$,  we have a new su
 
 Assuming that the set the prime divisors of $$a^n+b^n-c^n $$ is limited and it is difined as $$X=\{p_1,p_2,...,p_k \}$$.
 
-Assuming that $$(a,p_i)=(b,p_i)=(c,p_i)=1 \ \forall{1 \le i \le k}$$. Choosing $$n= \phi(p_1)\phi(p_2)....\phi(p_k)$$. Then apply Euler's theorem, we have:
+Assuming that $$(a,p_i)=(b,p_i)=(c,p_i)=1 \ \forall{1 \le i \le k}$$. Choosing $$n= \phi(p_1)\phi(p_2)....\phi(p_k)$$. Then apply **Euler's theorem**, we have:
 
 $$a^n \equiv 1 \pmod {p_i}$$
 
@@ -34,7 +34,7 @@ $$B=\{i ;p_i |b \} $$
 
 $$C=\{i ; p_i |c \}$$
 
-Apply Lifing expoinment lemma, we can choose $$n_1 $$ big enough so that: 
+Apply **Lifing expoinment lemma**, we can choose $$n_1 $$ big enough so that: 
 
 $$v_{p_i}(b^{n_1}-c^{n_1}) < v_{p_i}(a^{n_1}) (i \in A)$$
 
@@ -55,8 +55,9 @@ And exist $$n_3 $$ so that:
 
 $$a^{n_3}+b^{n_3}-c^{n_3}= \prod_{i \in C}p_i^{v_{p_i}(a^{n_3}+b^{n_3})}(P_3-Q_3)$$
 
-<center>where $$p_i | P_3;p_i \not| Q_3$$
-for $$i \in C $$</center>
+where $$p_i | P_3;p_i \not| Q_3$$
+for $$i \in C $$
+{: style="text-align: center"}
 
 Finally, choose:
 
