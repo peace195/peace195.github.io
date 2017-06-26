@@ -3,7 +3,7 @@ I am used to solve a lot of Mathematical Olympiad problems but the most remember
 * [Reduce to absurdity](https://en.wikipedia.org/wiki/Reductio_ad_absurdum)
 * [Euler's theorem](https://en.wikipedia.org/wiki/Euler%27s_theorem)
 * [Lifing expoinment lemma](http://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvYy82LzdjNTI1OGIyMmNjYmZkZGY4MDhhY2ViZTc3MGE1NDRmMzFhMTEzLnBkZg==&rn=TGlmdGluZyBUaGUgRXhwb25lbnQgTGVtbWEgLSBBbWlyIEhvc3NlaW4gUGFydmFyZGkgLSBWZXJzaW9uIDMucGRm)
-* Some simple numerical logics
+* Some simple numerical inferences
  
 ## Problem 
 Consider that $$a,b,c$$ are natural numbers,$$a,b $$ are different from $$c $$. Show that there exists infinitely prime number $$p $$ such that exists an integer $$n$$ to satisfy $$p | a^n+b^n-c^n$$  
