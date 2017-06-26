@@ -14,7 +14,7 @@ How can we load the string representation of list in each line as a real list? I
 
 * The way, that I used to do, is using **regex expression** to find the number in numerical part of data. 
 
-{% highlight python %}
+{% highlight python tabsize=4%}
 import re
 from collections import defaultdict
 
@@ -29,7 +29,7 @@ f.close()
 
 * A simpler way is using **ast library**.
 
-{% highlight python %}
+{% highlight python tabsize=4%}
 import ast
 from collections import defaultdict
 
