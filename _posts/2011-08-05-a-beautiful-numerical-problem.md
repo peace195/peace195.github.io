@@ -42,7 +42,7 @@ $$\Rightarrow a^{n_1}+b^{n_1}-c^{n_1}= \prod_{i \in A}p_i^{v_{p_i}(b^{n_1}+c^{n_
 
 where $$p_i | P_1 ; p_i \not| Q_1$$ 
 for $$i \in A$$
-
+{: style="text-align: center"}
 
 Similar as the thing above, exist $$n_2 $$ so that:
 
@@ -50,6 +50,7 @@ $$ a^{n_2}+b^{n_2}-c^{n_2}= \prod_{i \in B}p_i^{v_{p_i}(a^{n_2}-c^{n_2})}(P_2-Q_
 
 where $$p_i | P_2;p_i \not| Q_2$$
 for $$i \in B$$
+{: style="text-align: center"}
 
 And exist $$n_3 $$ so that:
 
@@ -61,7 +62,8 @@ for $$i \in C $$
 
 Finally, choose:
 
-$$n=n_1n_2n_3\prod\phi(p_i) $$ for $$i \not\in A,B,C$$
+$$n=n_1n_2n_3\prod\phi(p_i)$$ for $$i \not\in A,B,C$$
+{: style="text-align: center"}
 
 We have $$a^n+b^n-c^n $$ could be written:
 
@@ -69,6 +71,7 @@ $$\prod{p_i}^{\alpha_i}(P-Q)$$
 
 where $$\alpha_i \ge 1 (i \in A,B,C) $$and
 $$ p_i \not| P-Q (i=1,2,...,k)$$
+{: style="text-align: center"}
 
 $$\Rightarrow$$ Exist a prime number $$q \not\in X$$
 that satisfies $$q|P-Q|a^n+b^n-c^n$$.
