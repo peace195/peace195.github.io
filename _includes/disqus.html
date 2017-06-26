@@ -1,17 +1,18 @@
-{% if site.disqus %}
-<div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://peace195.github.io/{{ page.url }}"; // <--- use canonical URL
+this.page.identifier = "{{ page.id }}";
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
 
-	    var disqus_shortname = '{{ site.disqus }}';
+s.src = '//peace195.github.io.disqus.com/embed.js'; // <--- use Disqus shortname
 
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 {% endif %}
