@@ -55,7 +55,7 @@ And exist $$n_3 $$ so that:
 
 $$a^{n_3}+b^{n_3}-c^{n_3}= \prod_{i \in C}p_i^{v_{p_i}(a^{n_3}+b^{n_3})}(P_3-Q_3)$$
 
-where $$p_i | P_3;p_i \not| Q_3$$
+<center>where $$p_i | P_3;p_i \not| Q_3$$</center>
 for $$i \in C $$
 
 Finally, choose:
