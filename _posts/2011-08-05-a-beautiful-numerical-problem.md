@@ -24,7 +24,7 @@ $$c^n \equiv 1 \pmod {p_i}$$
 
 Hence $$a^n+b^n-c^n \equiv 1 \pmod {p_i}$$. Contradictory!
 
-So that exist some numbers $$ i \in (1,2,....,k) $$ that
+So that exist some numbers $$ i \in (1,2,....,k)$$ that
 $$p_i | a$$ or $$p_i | b$$ or $$p_i | c$$
 
 We define:
@@ -40,7 +40,8 @@ $$v_{p_i}(b^{n_1}-c^{n_1}) < v_{p_i}(a^{n_1}) (i \in A)$$
 
 $$\Rightarrow a^{n_1}+b^{n_1}-c^{n_1}= \prod_{i \in A}p_i^{v_{p_i}(b^{n_1}+c^{n_1})}(P_1-Q_1)$$
 
-where $$ p_i | P_1;p_i \not| Q_1 $$ với $$i \in A$$
+where $$p_i | P_1 ; p_i \not| Q_1$$ 
+với $$i \in A$$
 
 
 Similar as the thing above, exist $$n_2 $$ so that:
