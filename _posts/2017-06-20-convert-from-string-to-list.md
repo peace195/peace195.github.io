@@ -41,3 +41,5 @@ for line if f:
 	d_list[parts[0].strip()] = ast.literal_eval(parts[1].strip())
 f.close()
 {% endhighlight %}
+
+* Another example of mine: https://github.com/peace195/LateFusion/blob/master/cmc_curve.ipynb

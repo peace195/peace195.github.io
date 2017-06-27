@@ -1,4 +1,4 @@
-
+/*
 .highlight {
   background-color: #efefef;
   padding: 7px 7px 7px 10px;
@@ -8,6 +8,15 @@
   box-shadow: 3px 3px rgba(0,0,0,0.1);
   margin: 20px 0 20px 0;
   overflow: scroll;
+}
+*/
+
+.highlight {
+  margin: 0;
+  padding: 1em;
+  font-family: $monospace;
+  font-size: $type-size-7;
+  line-height: 1.8;
 }
 
 code {
