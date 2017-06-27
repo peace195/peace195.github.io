@@ -42,4 +42,4 @@ for line if f:
 f.close()
 {% endhighlight %}
 
-* Another example of mine: https://github.com/peace195/LateFusion/blob/master/cmc_curve.ipynb
+* Another example of mine: [https://github.com/peace195/LateFusion/blob/master/cmc_curve.ipynb](https://github.com/peace195/LateFusion/blob/master/cmc_curve.ipynb)
