@@ -14,7 +14,7 @@ How can we load the string representation of list in each line as a real list? I
 
 * The way, that I used to do, is using **regex expression** to find the number in numerical part of data. 
 
-{% highlight python tabsize=4%}
+```python
 import re
 from collections import defaultdict
 
@@ -25,7 +25,7 @@ for line if f:
 	parts = line.split(':')
 	d_list[parts[0].strip()] = map(float, re.findall("[-+]?\d+[\.]?\d*[eE]?[-+]?\d*", parts[1]))
 f.close()
-{% endhighlight %}
+```
 
 * A simpler way is using **ast library**.
 
