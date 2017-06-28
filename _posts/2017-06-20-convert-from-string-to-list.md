@@ -2,7 +2,7 @@
 title: Convert string representation of list to list in Python
 ---
 
-I worked with a lot of data. Sometimes, I have to load data from file with form:
+I worked with a lot of data. Sometimes, I have to load data from file with form
 
 {% highlight plain-text %}
 cat: [1, 1.2, 3, 4, 6.2]
