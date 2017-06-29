@@ -18,9 +18,17 @@ In this post, I am going to show mathematic inside before porting it into tensor
 </p>
 
 ## Inside the ideal
-Consider that we use n-level pooling (a pyramid) with $$a_1 \times a_1, a_2 \times a_2, ...,  a_n \times a_n$$ fixed output size correspondingly,  $$.
-Consider that we have an image with size $$h  \times w$$. After some convolution and pooling layer, we have a matrix features with size $$f_d  \times f_h \times f_w$$.
+
+### Model
+Consider that we use n-level pooling (a pyramid) with $$a_1 \times a_1, a_2 \times a_2, ...,  a_n \times a_n$$ fixed output size correspondingly.
+Consider that we have an image with size $$h  \times w$$.
+After some convolution and pooling layer, we have a matrix features with size $$f_d  \times f_h \times f_w$$.
 Then, we apply max pooling multiple times in this matrix features with $$window size = \lfloor \frac{f_h}{a_i} \rfloor \times \lfloor \frac{f_w}{a_i} \rfloor$$ correspondingly.
+
+### Training
+
+
+### Testing
 
 ## Tensorflow porting
 {% highlight python tabsize=4%}
