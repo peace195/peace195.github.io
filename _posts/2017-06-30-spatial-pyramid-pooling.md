@@ -61,7 +61,8 @@ You can see the full code and a SPP on top of Alexnet example [here](https://git
 ## Up-downside
 * Creative idea. Not need to resize image; in addition keep original features of image.
 * Take time to gather all image with same size to a batch.
-* Not well working in the **high detail** requirement identification task. E.g. plant identification, rice identification. Work well on object detection task.
+* Work well on object detection task.
+* Not well working in the **high detail** requirement identification task. E.g. plant identification, rice identification, ...
 * Sometimes, the loss function can not be converging when using transfer parameters. It may be because of not enough data or the hard level of the problem.
 
 ## Conclusions
