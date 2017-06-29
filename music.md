@@ -1,6 +1,6 @@
 ---
 layout: page
-title: volume up - thinking - then write something usefully
+title: Volume up, thinking, then write something usefully
 permalink: /music/
 ---
 
