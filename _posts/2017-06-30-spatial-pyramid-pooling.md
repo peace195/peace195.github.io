@@ -18,17 +18,13 @@ In this post, I am going to show mathematic inside before porting it into tensor
 </p>
 
 ## Inside the ideal
-
-### Model
 Consider that we use n-level pooling (a pyramid) with $$a_1 \times a_1, a_2 \times a_2, ...,  a_n \times a_n$$ fixed output size correspondingly.
 Consider that we have an image with size $$h  \times w$$.
 After some convolution and pooling layer, we have a matrix features with size $$f_d  \times f_h \times f_w$$.
-Then, we apply max pooling multiple times in this matrix features with $$window size = \lfloor \frac{f_h}{a_i} \rfloor \times \lfloor \frac{f_w}{a_i} \rfloor$$ correspondingly.
+Then, we apply max pooling multiple times in this matrix features with $$window size = \lfloor \frac{f_h}{a_i} \rfloor \times \lfloor \frac{f_w}{a_i} \rfloor$$ correspondingly. 
+Easily to see, SPP not effect to the convolution, fully connected parameters of a neural network model.
 
-### Training
-
-
-### Testing
+We gather all image with same size to a batch. After that, we train the parameters in each batch, then transfer them to another batch. This is equivalent for the testing scenario.
 
 ## Tensorflow porting
 {% highlight python tabsize=4%}
@@ -63,7 +59,10 @@ def spatial_pyramid_pool(previous_conv, num_sample, previous_conv_size, out_pool
 
 You can see the full code and a SPP on top of Alexnet example [here](https://github.com/peace195/sppnet).
 ## Up-downside
-
+* Creative idea. Not need to resize image; in addition keep original features of image.
+* Take time to gather all image with same size to a batch.
+* Not well working in the **high detail** requirement identification task. E.g. plant identification, rice identification. Work well on object detection task.
+* Sometimes, the loss function can not be converging when using transfer parameters. It may be because of not enough data or the hard level of the problem.
 
 ## Conclusions
 I have just analysis some idea of SPP. SPP is a beautiful idea that combine classic computer visions idea to modern neural network. Pheww, hope you like it. :D
