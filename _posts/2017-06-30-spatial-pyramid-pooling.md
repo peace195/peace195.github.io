@@ -2,8 +2,6 @@
 title: Upside and downside of spatial pyramid pooling
 ---
 
-## Abstracts
-
 Spatial Pyramid Pooling[1] (SPP) is a great idea that do not need resize image before feeding to the neural network.
 In other words, it uses multi-level pooling to adapts multiple image's size and keep the original features of them.
 SPP is inspired from:
