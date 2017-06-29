@@ -13,9 +13,7 @@ SPP is inspired from:
 
 In this post, I am going to show mathematic inside before porting it into tensorflow version and analysing upside and downside of it.
 
-<p align="center">
 ![Spatial Pyramid Pooling](https://raw.githubusercontent.com/peace195/peace195.github.io/master/images/SppNet.png)
-</p>
 
 ## Inside the ideal
 
