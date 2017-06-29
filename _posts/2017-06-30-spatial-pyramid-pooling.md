@@ -21,7 +21,7 @@ In this post, I am going to show mathematic inside before porting it into tensor
 Consider that we use n-level pooling (a pyramid) with $$a_1 \times a_1, a_2 \times a_2, ...,  a_n \times a_n$$ fixed output size correspondingly.
 Consider that we have an image with size $$h  \times w$$.
 After some convolution and pooling layer, we have a matrix features with size $$f_d  \times f_h \times f_w$$.
-Then, we apply max pooling multiple times in this matrix features with $$window size = \lfloor \frac{f_h}{a_i} \rfloor \times \lfloor \frac{f_w}{a_i} \rfloor$$ correspondingly. 
+Then, we apply max pooling multiple times in this matrix features with $$windows_size = \lfloor \frac{f_h}{a_i} \rfloor \times \lfloor \frac{f_w}{a_i} \rfloor$$ correspondingly. 
 Easily to see, SPP not effect to the convolution, fully connected parameters of a neural network model.
 
 We gather all image with same size to a batch. After that, we train the parameters in each batch, then transfer them to another batch. This is equivalent for the testing scenario.
