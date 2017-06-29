@@ -18,15 +18,17 @@ In this post, I am going to show mathematic inside before porting it into tensor
 </p>
 
 ## Inside the ideal
-
+Consider that we use n-level pooling (a pyramid) with $$a_1 \times a_1, a_2 \times a_2, ...,  a_n \times a_n$$ fixed output size correspondingly,  $$.
+Consider that we have an image with size $$h  \times w$$. After some convolution and pooling layer, we have a matrix features with size $$f_d  \times f_h \times f_w$$.
+Then, we apply max pooling multiple times in this matrix features with $$window size = \lfloor \frac{f_h}{a_i} \rfloor \times \lfloor \frac{f_w}{a_i} \rfloor$$ correspondingly.
 
 ## Tensorflow porting
 {% highlight python tabsize=4%}
-def spatial_pyramid_pool(previous_conv, num_sample, image_size, out_pool_size):
+def spatial_pyramid_pool(previous_conv, num_sample, previous_conv_size, out_pool_size):
     '''
 	previous_conv: a tensor vector of previous convolution layer
 	num_sample: an int number of image in the batch
-	image_size: an int vector [height, width] is the image size of all image in the batch
+	previous_conv_size: an int vector [height, width] of the matrix features size of previous convolution layer
 	out_pool_size: a int vector of expected output size of max pooling layer
 	
 	returns: a tensor vector with shape [1 x n] is the concentration of multi-level pooling
