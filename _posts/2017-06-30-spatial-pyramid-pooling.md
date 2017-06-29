@@ -21,6 +21,41 @@ In this post, I am going to show mathematic inside before porting it into tensor
 
 
 ## Tensorflow porting
+{% highlight python tabsize=4%}
+def spatial_pyramid_pool(previous_conv, num_sample, image_size, out_pool_size):
+    '''
+	previous_conv: a tensor vector of previous convolution layer
+	num_sample: an int number of image in the batch
+	image_size: an int vector [height, width] is the image size of all image in the batch
+	out_pool_size: a int vector of expected output size of max pooling layer
+	
+	returns: a tensor vector with shape [1 x n] is the concentration of multi-level pooling
+	'''
+        
+    h_strd = image_size[0] / out_pool_size[0]
+    w_strd = image_size[1] / out_pool_size[0]
+    h_wid = image_size[0] - h_strd * out_pool_size[0] + 1
+    w_wid = image_size[1] - w_strd * out_pool_size[0] + 1
+    
+    spp = tf.Variable(tf.truncated_normal([num_sample, ] stddev=0.01))
+    
+    for i in range(0, len(out_pool_size)):
+        h_strd = image_size[0] / out_pool_size[i]
+        w_strd = image_size[1] / out_pool_size[i]
+        h_wid = image_size[0] - h_strd * out_pool_size[i] + 1
+        w_wid = image_size[1] - w_strd * out_pool_size[i] + 1
+        max_pool = tf.nn.max_pool(previous_conv,
+                                   ksize=[1,h_wid,w_wid, 1],
+                                   strides=[1,h_strd, w_strd,1],
+                                   padding='VALID')
+        if (i == 0):
+			spp = tf.reshape(max_pool, [num_sample, -1])
+		else:
+			spp = tf.concat(1, [spp, tf.reshape(max_pool, [num_sample, -1])])
+    
+    return spp
+{% endhighlight %}
+
 You can see the full code and a SPP on top of Alexnet example [here](https://github.com/peace195/sppnet).
 ## Up-downside
 
