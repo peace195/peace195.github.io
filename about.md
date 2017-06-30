@@ -6,7 +6,7 @@ permalink: /about/
 
 **PASSION, RESPONSIBILITY and MAGIC EFFECT**
 
-Just sharing what I have known beacause I think it might be useful at sometimes, somewhere for someone. :)
+Just sharing what I have known beacause I think it might be useful at sometimes, somewhere for someone.
 
 ### More Information
 

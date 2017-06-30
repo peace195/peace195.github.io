@@ -63,7 +63,7 @@ You can see the full code and a SPP on top of Alexnet example [here](https://git
 * Sometimes, the loss function can not be converging when using transfer parameters. It may be because of not enough data or the hard level of the problem.
 
 ## Conclusions
-I have just analysis some idea of SPP. SPP is a beautiful idea that combine classic computer visions idea to modern neural network. Pheww, hope you like it. :D
+I have just analysis some idea of SPP. SPP is a beautiful idea that combine classic computer visions idea to modern neural network. Pheww, hope you enjoy it. :D
 
 ## References
 [1] [Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition](https://arxiv.org/abs/1406.4729)
