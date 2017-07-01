@@ -25,7 +25,7 @@ Easily to see, SPP not effect to the convolution, fully connected parameters of 
 We gather all image with same size to a batch. After that, we train the parameters in each batch, then transfer them to another batch. This is equivalent for the testing scenario.
 
 ## Tensorflow porting
-{% highlight python linenos %}
+{% highlight python %}
 def spatial_pyramid_pool(previous_conv, num_sample, previous_conv_size, out_pool_size):
     '''
 	previous_conv: a tensor vector of previous convolution layer
