@@ -27,14 +27,14 @@ We gather all image with same size to a batch. After that, we train the paramete
 ## Tensorflow porting
 {% highlight python %}
 def spatial_pyramid_pool(previous_conv, num_sample, previous_conv_size, out_pool_size):
-    """
+    '''
     previous_conv: a tensor vector of previous convolution layer
     num_sample: an int number of image in the batch
     previous_conv_size: an int vector [height, width] of the matrix features size of previous convolution layer
     out_pool_size: a int vector of expected output size of max pooling layer
 	
     returns: a tensor vector with shape [1 x n] is the concentration of multi-level pooling
-    """
+    '''
         
     spp = tf.Variable(tf.truncated_normal([num_sample, ] stddev=0.01))
     
