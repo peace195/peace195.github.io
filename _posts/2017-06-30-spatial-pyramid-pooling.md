@@ -9,7 +9,7 @@ SPP is inspired from:
 * [Pyramid (image processing)](https://en.wikipedia.org/wiki/Pyramid_(image_processing))
 * [Bag-of-words](https://en.wikipedia.org/wiki/Bag-of-words_model_in_computer_vision)
 
-In this post, I am going to show mathematic inside before porting it into tensorflow version and analysing upside and downside of it.
+In this note, I am going to show mathematic inside before porting it into tensorflow version and analysing upside and downside of it.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/peace195/peace195.github.io/master/images/SppNet.png" alt="Spatial Pyramid Pooling"/>
@@ -25,7 +25,7 @@ Easily to see, SPP not effect to the convolution, fully connected parameters of 
 We gather all image with same size to a batch. After that, we train the parameters in each batch, then transfer them to another batch. This is equivalent for the testing scenario.
 
 ## Tensorflow porting
-{% highlight python tabsize=4%}
+{% highlight python linenos %}
 def spatial_pyramid_pool(previous_conv, num_sample, previous_conv_size, out_pool_size):
     '''
 	previous_conv: a tensor vector of previous convolution layer
