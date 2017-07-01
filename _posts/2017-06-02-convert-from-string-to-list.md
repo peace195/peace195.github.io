@@ -23,8 +23,8 @@ d_list = defaultdict(list)
 
 f = open('data.txt', 'r')
 for line if f:
-	parts = line.split(':')
-	d_list[parts[0].strip()] = map(float, re.findall("[-+]?\d+[\.]?\d*[eE]?[-+]?\d*", parts[1]))
+    parts = line.split(':')
+    d_list[parts[0].strip()] = map(float, re.findall("[-+]?\d+[\.]?\d*[eE]?[-+]?\d*", parts[1]))
 f.close()
 ```
 
@@ -38,8 +38,8 @@ d_list = defaultdict(list)
 
 f = open('data.txt', 'r')
 for line if f:
-	parts = line.split(':')
-	d_list[parts[0].strip()] = ast.literal_eval(parts[1].strip())
+    parts = line.split(':')
+    d_list[parts[0].strip()] = ast.literal_eval(parts[1].strip())
 f.close()
 {% endhighlight %}
 
