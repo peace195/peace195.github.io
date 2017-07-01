@@ -2,7 +2,8 @@
 title: A beautiful numerical problem using reductio ad absurdum
 ---
 
-I am used to solve a lot of Mathematical Olympiad problems but the most rememberable problem that I love is a numerical problem. It took me three hours to solve it. Why is it beautiful.? Because it is solved by some beautiful techniques:
+I am used to solve a lot of Mathematical Olympiad problems but the most rememberable problem that I love is a numerical problem.
+It took me three hours to solve it. Why is it beautiful.? Because it is solved by some beautiful techniques:
 
 * [Reduce to absurdity](https://en.wikipedia.org/wiki/Reductio_ad_absurdum)
 * [Euler's theorem](https://en.wikipedia.org/wiki/Euler%27s_theorem)

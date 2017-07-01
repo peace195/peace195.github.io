@@ -2,7 +2,8 @@
 title: Convert string representation of list to list in Python
 ---
 
-I worked with a lot of data. Sometimes, I have to load data from file with form
+Preprocess data is a big step when you do a machine learning problem.
+In this post, I will show a trick to import text data such as word embedding, dictionary of lists ..., which usually has a format likes:
 
 {% highlight plain-text %}
 cat: [1, 1.2, 3, 4, 6.2]
