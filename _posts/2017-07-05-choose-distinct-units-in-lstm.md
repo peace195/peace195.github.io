@@ -89,7 +89,7 @@ As far as we know, some of most important concepts:
 
 * Recurrent	Neural Networks
 
-$$h_t = \sigma\big(W^{(hh)}h_{t-1} + W^{(hx)}x_{[t]}\big)$$
+$$h_t = \sigma\big(W^{(hh)}h_{t-1} + W^{(hx)}x_{t}\big)$$
 
 $$\hat{y}_t = softmax\big(W^{(S)}h_t\big)$$
 
@@ -108,9 +108,9 @@ $$B$$ is the batch size.
 #### After masking
 Consider that $$m$$ is the mask vector. Then, we have
 
-$$h_t = \sigma\big(W^{(hh)}h_{t-1} + W^{(hx)}x_{[t]} \big)$$
+$$h_t = \sigma\big(W^{(hh)}h_{t-1} + W^{(hx)}x_{t} \big)$$
 
-$$l_{[t]} = h_t \cdot m_t$$
+$$l_{t} = h_t \cdot m_t$$
 
 $$\hat{y}_t = softmax\big(W^{(S)}l_t\big)$$
 
