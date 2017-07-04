@@ -88,7 +88,7 @@ correct_prediction = tf.reduce_sum(tf.multiply(tf.cast(tf.equal(prediction, tf_y
 
 **Does masking layer affect the gradient descent when training the model?**
 
-### Before masking
+#### Before masking
 As far as we know, some of most important concepts:
 
 * Recurrent	Neural Networks
@@ -109,7 +109,7 @@ $$\theta^{new} = \theta^{old} - \alpha\nabla_{\theta}J_{t:t+B}(\theta)$$
 $$B$$ is the batch size.
 {: style="text-align: center"}
 
-### After masking
+#### After masking
 Consider that $$m$$ is the mask vector. Then, we have
 
 $$h_t = \sigma\big(W^{(hh)}h_{t-1} + W^{(hx)}x_{[t]} \big)$$
@@ -125,10 +125,5 @@ So we has very strong logic inside the model. That is: "All paremeter depend on 
 
 Here are some pictures about batch train accuracy and loss when using masking for bidirectional LSTM model.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/code/accuracy.png" alt="accuracy"/>
-</p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/code/loss.png" alt="loss"/>
-</p>
+<img src="https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/code/accuracy.png" alt="accuracy"/> <img src="https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/code/loss.png" alt="loss"/>
