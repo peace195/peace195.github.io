@@ -15,7 +15,7 @@ In this problem, we have to predict the polarity label of some aspect in a sente
 We usually use a tuple (positive, negative or neutral) for the polarity label.
 E.g: 
 
-* **single aspect**
+* single aspect
 
 {% highlight xml tabsize=4%}
 <text>Love Al Di La</text>
@@ -24,9 +24,9 @@ E.g:
 </Opinions>
 {% endhighlight %}
 
-* **multiple aspect**
+* multiple aspect
 
-{% highlight xmk tabsize=4%}
+{% highlight xml tabsize=4%}
 <text>An awesome organic dog, and a conscious eco friendly establishment.</text>
 <Opinions>
 	<Opinion target="dog" category="FOOD#QUALITY" polarity="positive" from="19" to="22"/>
@@ -52,7 +52,7 @@ Then, we compute softmax, cross entropy and gradient descent as normally.
 
 Here is the [Tensorflow code example](https://github.com/peace195/aspect-based-sentiment-analysis/tree/master/code) for this solution:
 
-{% highlight python tabsize=4%}
+{% highlight ruby tabsize=4%}
 lstm_fw_cell = tf.nn.rnn_cell.BasicLSTMCell(nb_lstm_inside, forget_bias=1.0)
 lstm_bw_cell = tf.nn.rnn_cell.BasicLSTMCell(nb_lstm_inside, forget_bias=1.0)
 
@@ -86,12 +86,13 @@ prediction = tf.argmax(tf.nn.softmax(sentiment), 2)
 correct_prediction = tf.reduce_sum(tf.multiply(tf.cast(tf.equal(prediction, tf_y_train), tf.float32), tf_X_binary_mask))
 {% endhighlight %}
 
-** Does masking layer affect the gradient descent when training the model?**
+**Does masking layer affect the gradient descent when training the model?**
 
 ### Before masking
 As far as we know, some of most important concepts:
 
 * Recurrent	Neural Networks
+
 $$h_t = \sigma\big(W^{(hh)}h_{t-1} + W^{(hx)}x_{[t]}\big)$$
 
 $$\hat{y}_t = softmax\big(W^{(S)}h_t\big)$$
