@@ -10,27 +10,29 @@ It was be shown like this picture.
 </p>
 
 How about choosing some distinct units inside the recurrent(LSTM, GRU, ...) layer of recurrent neural networks?
-I have worked in some problem need to do that such as **Aspect-Based Sentiment Analysis**.
+I have worked in some problem need to do that such as **sspect-based sentiment analysis**.
 In this problem, we have to predict the polarity label of some aspect in a sentence or passage.
 We usually use a tuple (positive, negative or neutral) for the polarity label.
 E.g: 
 
 * **single aspect**
-```xml
+
+{% highlight xml tabsize=4%}
 <text>Love Al Di La</text>
 <Opinions>
 	<Opinion target="Al Di La" category="RESTAURANT#GENERAL" polarity="positive" from="5" to="13"/>
 </Opinions>
-```
+{% endhighlight %}
 
 * **multiple aspect**
-```xml
+
+{% highlight xmk tabsize=4%}
 <text>An awesome organic dog, and a conscious eco friendly establishment.</text>
 <Opinions>
 	<Opinion target="dog" category="FOOD#QUALITY" polarity="positive" from="19" to="22"/>
 	<Opinion target="establishment" category="RESTAURANT#MISCELLANEOUS" polarity="positive" from="53" to="66"/>
 </Opinions>
-```
+{% endhighlight %}
 
 One of my proposal model is using bidirectional LSTM neural networks. It was be shown like picture below.
 In this model, we only predict polarity label for the aspects in the sentence. But we have one problem is the different position of aspects in different sentence.
@@ -50,7 +52,7 @@ Then, we compute softmax, cross entropy and gradient descent as normally.
 
 Here is the [Tensorflow code example](https://github.com/peace195/aspect-based-sentiment-analysis/tree/master/code) for this solution:
 
-```python
+{% highlight python tabsize=4%}
 lstm_fw_cell = tf.nn.rnn_cell.BasicLSTMCell(nb_lstm_inside, forget_bias=1.0)
 lstm_bw_cell = tf.nn.rnn_cell.BasicLSTMCell(nb_lstm_inside, forget_bias=1.0)
 
@@ -82,7 +84,7 @@ sentiment = tf.multiply(sentiment, tf.expand_dims(tf_X_binary_mask, 2))
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=sentiment, labels=y_labels))
 prediction = tf.argmax(tf.nn.softmax(sentiment), 2)
 correct_prediction = tf.reduce_sum(tf.multiply(tf.cast(tf.equal(prediction, tf_y_train), tf.float32), tf_X_binary_mask))
-```
+{% endhighlight %}
 
 ** Does masking layer affect the gradient descent when training the model?**
 
@@ -98,7 +100,7 @@ $$\hat{y}_t = softmax\big(W^{(S)}h_t\big)$$
 
 $$J^{(t)}(\theta) = -\sum_{j=1}^{3} y_{t,j}log\hat{y}_{t,j}$$
 
-($$j$$ runs from 1 to 3 because there are three labels in our example problem. They are: position, negative and neural.)
+$$j$$ runs from 1 to 3 because there are three labels (positive, negative and neural) in our example problem.
 * Mini-batched SGD
 
 $$\theta^{new} = \theta^{old} - \alpha\nabla_{\theta}J_{t:t+B}(\theta)$$
@@ -123,9 +125,9 @@ So we has very strong logic inside the model. That is: "All paremeter depend on 
 Here are some pictures about batch train accuracy and loss when using masking for bidirectional LSTM model.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/peace195/peace195.github.io/master/images/accuracy.jpg" alt="accuracy"/>
+  <img src="https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/code/accuracy.png" alt="accuracy"/>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/peace195/peace195.github.io/master/images/loss.jpg" alt="loss"/>
+  <img src="https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/code/loss.png" alt="loss"/>
 </p>
