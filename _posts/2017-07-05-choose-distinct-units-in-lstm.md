@@ -20,7 +20,7 @@ E.g:
 {% highlight xml tabsize=4%}
 <text>Love Al Di La</text>
 <Opinions>
-	<Opinion target="Al Di La" category="RESTAURANT#GENERAL" polarity="positive" from="5" to="13"/>
+    <Opinion target="Al Di La" category="RESTAURANT#GENERAL" polarity="positive" from="5" to="13"/>
 </Opinions>
 {% endhighlight %}
 
@@ -29,8 +29,8 @@ E.g:
 {% highlight xml tabsize=4%}
 <text>An awesome organic dog, and a conscious eco friendly establishment.</text>
 <Opinions>
-	<Opinion target="dog" category="FOOD#QUALITY" polarity="positive" from="19" to="22"/>
-	<Opinion target="establishment" category="RESTAURANT#MISCELLANEOUS" polarity="positive" from="53" to="66"/>
+    <Opinion target="dog" category="FOOD#QUALITY" polarity="positive" from="19" to="22"/>
+    <Opinion target="establishment" category="RESTAURANT#MISCELLANEOUS" polarity="positive" from="53" to="66"/>
 </Opinions>
 {% endhighlight %}
 
@@ -59,9 +59,9 @@ lstm_bw_multicell = tf.nn.rnn_cell.MultiRNNCell([lstm_bw_cell]*layers)
 
 # get lstm cell output
 outputs, _, _ = tf.contrib.rnn.static_bidirectional_rnn(lstm_fw_multicell,
-														lstm_bw_multicell,
-														X_train,
-														dtype='float32')
+                                                        lstm_bw_multicell,
+                                                        X_train,
+                                                        dtype='float32')
 
 output_fw, output_bw = tf.split(outputs, [nb_lstm_inside, nb_lstm_inside], 2)
 sentiment = tf.reshape(tf.add(output_fw, output_bw), [-1, nb_lstm_inside]) 
@@ -87,13 +87,13 @@ correct_prediction = tf.reduce_sum(tf.multiply(tf.cast(tf.equal(prediction, tf_y
 #### Before masking
 As far as we know, some of most important concepts:
 
-* Recurrent	Neural Networks
+* Recurrent Neural Networks
 
 $$h_t = \sigma\big(W^{(hh)}h_{t-1} + W^{(hx)}x_{t}\big)$$
 
 $$\hat{y}_t = softmax\big(W^{(S)}h_t\big)$$
 
-* Cross	Entropy	Error
+* Cross Entropy Error
 
 $$J^{(t)}(\theta) = -\sum_{j=1}^{3} y_{t,j}log\hat{y}_{t,j}$$
 
