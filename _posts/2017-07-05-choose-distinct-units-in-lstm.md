@@ -1,5 +1,5 @@
 ---
-title: Choose some distinct units inside the recurrent(LSTM, GRU, ...) layer of recurrent neural networks
+title: Choose some distinct units inside the recurrent (LSTM, GRU, ...) layer of recurrent neural networks
 ---
 
 When working with a [recurrent neural networks](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/) model, we usually use the last unit or some fixed units of recurrent series to predict the label of observations.
