@@ -3,7 +3,7 @@ layout: page
 permalink: /about/
 ---
 
-Just sharing what I have known beacause I think it might be useful at sometimes, somewhere for someone.
+Just sharing what I have known beacause I think it sometimes might be useful for someone.
 
 ### More Information
 
