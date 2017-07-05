@@ -9,7 +9,7 @@ It was be shown like this picture.
   <img src="https://raw.githubusercontent.com/peace195/peace195.github.io/master/images/rnn.jpg" alt="RNN"/>
 </p>
 
-How about choosing some distinct units inside the recurrent(LSTM, GRU, ...) layer of recurrent neural networks?
+How about choosing some distinct units inside the recurrent (LSTM, GRU, ...) layer of recurrent neural networks?
 I have worked in some problem need to do that such as **sspect-based sentiment analysis**.
 In this problem, we have to predict the polarity label of some aspect in a sentence or passage.
 We usually use a tuple (positive, negative or neutral) for the polarity label.
