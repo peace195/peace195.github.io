@@ -51,7 +51,6 @@ class Data:
     '''
     This class contains train, test, valid data or word2vec, word dict, etc, ...
     '''
-	
     def __init__(self, data_dir, ...):
         self.data_dir = data_dir
         
@@ -84,7 +83,6 @@ def main():
     sess = tf.Session()
     data = Data(data_dir, ...)
     model = Model(parameters, sess)
-    
     model.train(data)
     # model.evalate(data)
     # model.predict(data)
