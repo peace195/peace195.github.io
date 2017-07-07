@@ -61,13 +61,12 @@ class Data:
 class Model:
     def __init__(self, parameters, sess):
         self.sess = sess
-        ...
         
     def modeling(self):
-	    return
+        return
 		
     def load_model(self):
-	    return
+        return
 		
     def save_model(self):
         return
