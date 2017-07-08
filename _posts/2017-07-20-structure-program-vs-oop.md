@@ -49,7 +49,8 @@ Otherwises, It is hard for using the model for some backend services. I proposed
 {% highlight ruby tabsize=4%}
 class Data:
     '''
-    This class contains train, test, valid data or word2vec, word dict, etc, ...
+    This class contains data attributes such as: train, test, valid dataset
+	or word2vec, word dict, label, etc, ...
     '''
     def __init__(self, data_dir, ...):
         self.data_dir = data_dir
