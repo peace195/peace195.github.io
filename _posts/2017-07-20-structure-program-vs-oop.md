@@ -50,7 +50,7 @@ Otherwises, It is hard for using the model for some backend services. I proposed
 class Data:
     '''
     This class contains data attributes such as: train, test, valid dataset
-	or word2vec, word dict, label, etc, ...
+    or word2vec, word dict, label, etc, ...
     '''
     def __init__(self, data_dir, ...):
         self.data_dir = data_dir
