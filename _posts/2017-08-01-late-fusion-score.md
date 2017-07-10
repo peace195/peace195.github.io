@@ -96,12 +96,11 @@ The experiments show that the fusion techniques increase dramatically the
 performances for the plant identification task. In addition, my hybrid model presents the best results in all
 evaluation.
 
-## Materials
 
-
-| Bill of Materials | Purpose | Cost: |
-|---|:---|:---|
-| Raspberry Pi Computer Units  | Runs main program, computations and calculations  | **TBA**  |
-| Camera/Sensors  | Monitors parking lot entrances and uses [OpenCV](http://opencv.org/) | **TBA**   |
-| Network Adapters  | Transmits data regarding capacity and current conditions    | **TBA**   |
-| External Materials  | (*Waterproof Case, Ethernet, Power Cords*)   | **TBA**   |
+|---
+| Default aligned | Left aligned | Center aligned | Right aligned
+|-|:-|:-:|-:
+| First body part | Second cell | Third cell | fourth cell
+| Second line |foo | **strong** | baz
+| Third line |quux | baz | bar
+|---
