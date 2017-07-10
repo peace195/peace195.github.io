@@ -49,10 +49,10 @@ R1 and R5 are rank 1 and rank 5 accuracy.
 * Dataset: Used 50 species from [flower dataset](http://www.imageclef.org/lifeclef/2015/plant) in PlantClef2015 competition
 * Result: Combined two popular CNN models which are AlexNet and GoogleNet.
 
-| Accuracy (%) | AlexNet | GoogleNet | Max rule | Sum rule  | Product rule | SVM | Hybrid |
-| --- |  --- | --- | --- | --- | --- | --- | --- |
-| R1 | 73.0 | 74.0 | 77.0 | 77.0 | 78.0 | 78.0 | 78.2 |
-| R5 | 90.8 | 91.2 | 93.0 | 93.0 | 93.0 | 92.0 | 93.0 |
+|Accuracy (%) | AlexNet | GoogleNet | Max rule | Sum rule  | Product rule | SVM | Hybrid |
+|--- |  --- | --- | --- | --- | --- | --- | --- |
+|R1 | 73.0 | 74.0 | 77.0 | 77.0 | 78.0 | 78.0 | 78.2 |
+|R5 | 90.8 | 91.2 | 93.0 | 93.0 | 93.0 | 92.0 | 93.0 |
 
 
 ### Combinations of multi observations
@@ -62,8 +62,9 @@ R1 and R5 are rank 1 and rank 5 accuracy.
 
 Singe organ
 
-|Organ | R1 (%) | R5 (%) |
-| --- | --- | --- |
+|Organ| R1 (%) | R5 (%) |
+|---|---|---|
+
 |Leaf (Le) | 66.2 | 89.8 |
 |Flower (Fl) | 73.0 | 90.8 |
 |Branch (Br) | 43.2 | 70.4 |
@@ -72,7 +73,8 @@ Singe organ
 Combined pairs of organ based on score of AlexNet
 
 |     | Accuracy (%) | Max rule | Sum rule | Product rule | SVM  | Hybrid |
-| --- |  --- | --- | --- | --- | --- | --- |
+
+|--- |  --- | --- | --- | --- | --- | --- |
 |En - Le | R1 | 66.2 | 67.2 |75.6 | 74.0 | 76.6 |
 |        | R5 | 88.6 | 88.8 | 93.2 | 81.8 | 94.6 |
 |En - Fl | R1 | 73.8 | 74.4 | 78.8 | 77.2 | 81.2 |
@@ -86,11 +88,6 @@ Combined pairs of organ based on score of AlexNet
 |Br - En | R1 | 51.6 | 52.2 | 58.0 | 58.0 | 58.6 |
 |        | R5 | 76.8 | 77.6 | 83.6 | 81.4 | 83.8 |
 
-
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
 
 ## 3. Conclusions
 
