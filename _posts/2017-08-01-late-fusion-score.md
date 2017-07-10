@@ -87,10 +87,10 @@ Combined pairs of organ based on score of AlexNet
 |        | R5 | 76.8 | 77.6 | 83.6 | 81.4 | 83.8 |
 
 
-	| Left-aligned | Center-aligned | Right-aligned |
-	| :---         |     :---:      |          ---: |
-	| git status   | git status     | git status    |
-	| git diff     | git diff       | git diff      |
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
 
 ## 3. Conclusions
 
