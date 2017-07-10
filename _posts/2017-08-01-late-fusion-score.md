@@ -4,7 +4,7 @@ title: Some late fusion techniques based on the score of observations
 "Many heads are better than one". This is how fusion works. There are early fusion, middle fusion and late fusion techniques.
 In this post, I focused to  some late fusion techniques based on the score of observations.
 
-## Late fusion techniques
+## 1. Late fusion techniques
 
 ### Transformation-based approaches
 
@@ -40,20 +40,39 @@ $$f(x, y) = SVM(f(x), f(y))$$
 
 $$f(x, y) = SVM(f(x), f(y)) \cdot f(x) \cdot f(y)$$
 
-## Experiments
+## 2. Experiments
+
+R1 and R5 are rank 1 and rank 5 accuracy.
 
 ### Combinations of multi Deep Learning models
 
 * Dataset: Used 50 species from [flower dataset](http://www.imageclef.org/lifeclef/2015/plant) in PlantClef2015 competition
 * Result: Combined two popular CNN models which are AlexNet and GoogleNet.
 
-| Accuracy (%)  | AlexNet |  GoogleNet | Max rule | Sum rule  | Product rule  | SVM  | Hybrid |
-| ------------- | ------- | ---------- | -------- | --------- | ------------- | ---- | ------ |
-| Rank 1        |   73.0  |   74.0     | 77.0     |  77.0     | 78.0          | 78.0 | 78.2   |
-| Rank 5        |   90.8  |   91.2     | 93.0     |  93.0     | 93.0          | 92.0 | 93.0   |
+| Accuracy (%) | AlexNet | GoogleNet | Max rule | Sum rule  | Product rule | SVM | Hybrid |
+| --- |  --- | --- | --- | --- | --- | --- | --- |
+| R1 | 73.0 | 74.0 | 77.0 | 77.0 | 78.0 | 78.0 | 78.2 |
+| R5 | 90.8 | 91.2 | 93.0 | 93.0 | 93.0 | 92.0 | 93.0 |
 
 
 ### Combinations of multi observations
 
 * Dataset: Used 50 species from [flower, leaf, entire, branch dataset](http://www.imageclef.org/lifeclef/2015/plant) in PlantClef2015 competition
-* Result: Combined pairs of organ.
+* Result: Combined pairs of organ based on score of AlexNet.
+
+|     | Accuracy (%) | Max rule | Sum rule | Product rule | SVM  | Hybrid |
+| --- |  --- | --- | --- | --- | --- | --- |
+|En - Le | R1 | 66.2 | 67.2 |75.6 | 74.0 | 76.6 |
+|        | R5 | 88.6 | 88.8 | 93.2 | 81.8 | 94.6 |
+|En - Fl | R1 | 73.8 | 74.4 | 78.8 | 77.2 | 81.2 |
+|        | R5 | 92.6 | 92.8 | 94.2 | 84.2 | 94.4 |
+|Le - Fl | R1 | 81.6 | 82.0 | 88.6 | 86.2 | 89.8 |
+|        | R5 | 96.8 | 96.8 | 98.2 | 90.4 | 98.4 |
+|Br - Le | R1 | 70.2 | 71.0 | 76.8 | 73.8 | 78.4 |
+|        | R5 | 89.6 | 90.0 | 93.4 | 79.6 | 93.8 |
+|Br - Fl | R1 | 74.2 | 75.4 | 80.8 | 79.0 | 81.4 |
+|        | R5 | 90.8 | 91.4 | 95.2 | 83.0 | 95.4 |
+|Br - En | R1 | 51.6 | 52.2 | 58.0 | 58.0 | 58.6 |
+|        | R5 | 76.8 | 77.6 | 83.6 | 81.4 | 83.8 |
+
+## 2. Conclusions
