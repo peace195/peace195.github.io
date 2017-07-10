@@ -25,14 +25,10 @@ $$f(x, y) = f(x) \cdot f(y)$$
 
 ### Classification-based approaches
 
-Once the ground-truth species of the training images and the predicted
-class are the identical, they are the positive samples. On
-the other hand, the actual class of images is different from
-the predict class. They are defined as negative samples. A SVM
-classifier is learnt by using positive and negative
-training samples in the score space. In the test phase, the
-distance to the decision bound is the measure to decide the
-labels of testing samples.
+Once the ground-truth species of the training images and the predicted class are the identical, they are the positive samples.
+On the other hand, the actual class of images is different from the predict class. They are defined as negative samples.
+A SVM classifier is learnt by using positive and negative training samples in the score space.
+In the test phase, the distance to the decision bound is the measure to decide the labels of testing samples.
 
 $$f(x, y) = SVM(f(x), f(y))$$
 
