@@ -86,10 +86,14 @@ Combined pairs of organ based on score of AlexNet
 |Br - En | R1 | 51.6 | 52.2 | 58.0 | 58.0 | 58.6 |
 |        | R5 | 76.8 | 77.6 | 83.6 | 81.4 | 83.8 |
 
+
+	| Left-aligned | Center-aligned | Right-aligned |
+	| :---         |     :---:      |          ---: |
+	| git status   | git status     | git status    |
+	| git diff     | git diff       | git diff      |
+
 ## 3. Conclusions
 
-Tables        | Are           | Cool  
-:-------------------------:|:-------------------------:|:-----:
-col 3 is      | right-aligned | $1600 
-col 2 is      | centered      |   $12 
-zebra stripes | are neat      |    $1 
+The experiments show that the fusion techniques increase dramatically the
+performances for the plant identification task. In addition, my hybrid model presents the best results in all
+evaluation.
