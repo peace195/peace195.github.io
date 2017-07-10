@@ -6,8 +6,6 @@ title: Some late fusion techniques based on the score of observations
 "Many heads are better than one". This is how fusion works. There are early fusion, middle fusion and late fusion techniques.
 In this post, I focused to  some late fusion techniques based on the score of observations.
 
-## 1. Late fusion techniques
-
 ### Transformation-based approaches
 
 Let I define that $$f(x)$$ is the vector score of observation $$x$$ through a prediction model such as softmax layer in Deep Learning.
