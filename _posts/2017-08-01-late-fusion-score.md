@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Some late fusion techniques based on the score of observations
 ---
 
@@ -63,12 +64,12 @@ Dataset: Used 50 species from [flower, leaf, entire, branch dataset](http://www.
 
 Singe organ
 
-	|  Organ     | R1 (%) | R5 (%) |
-	| ---------- | ------ | ------ |
-	| Leaf (Le)  |  66.2  |  89.8  |
-	| Flower (Fl)|  73.0  |  90.8  |
-	| Branch (Br)|  43.2  |  70.4  |
-	| Entire (En)|  32.4  |  64.0  |
+|  Organ     | R1 (%) | R5 (%) |
+| ---------- | ------ | ------ |
+| Leaf (Le)  |  66.2  |  89.8  |
+| Flower (Fl)|  73.0  |  90.8  |
+| Branch (Br)|  43.2  |  70.4  |
+| Entire (En)|  32.4  |  64.0  |
 
 Combined pairs of organ based on score of AlexNet
 
