@@ -3,8 +3,6 @@ layout: page
 permalink: /about/
 ---
 
-Just sharing what I have known beacause I think it sometimes might be useful to someone.
-
 ### More Information
 
 [resume](https://github.com/peace195/peace195.github.io/blob/master/resume.pdf)
