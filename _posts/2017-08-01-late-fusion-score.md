@@ -96,11 +96,42 @@ The experiments show that the fusion techniques increase dramatically the
 performances for the plant identification task. In addition, my hybrid model presents the best results in all
 evaluation.
 
-
-|---
-| Default aligned | Left aligned | Center aligned | Right aligned
-|-|:-|:-:|-:
-| First body part | Second cell | Third cell | fourth cell
-| Second line |foo | **strong** | baz
-| Third line |quux | baz | bar
-|---
+<table rules="groups"> 
+<thead> 
+<tr> 
+<th style="text-align: left">Header1</th> 
+<th style="text-align: center">Header2</th> 
+<th style="text-align: right">Header3</th>
+ </tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td style="text-align: left">cell1</td> 
+<td style="text-align: center">cell2</td> 
+<td style="text-align: right">cell3</td> 
+</tr> 
+<tr> 
+<td style="text-align: left">cell4</td> 
+<td style="text-align: center">cell5</td> 
+<td style="text-align: right">cell6</td> 
+</tr> 
+</tbody> 
+<tbody> 
+<tr> 
+<td style="text-align: left">cell1</td> 
+<td style="text-align: center">cell2</td> 
+<td style="text-align: right">cell3</td> 
+</tr> 
+<tr> 
+<td style="text-align: left">cell4</td> 
+<td style="text-align: center">cell5</td> 
+<td style="text-align: right">cell6</td> </tr> 
+</tbody> 
+<tfoot> 
+<tr> 
+<td style="text-align: left">Foot1</td> 
+<td style="text-align: center">Foot2</td> 
+<td style="text-align: right">Foot3</td> 
+</tr> 
+</tfoot> 
+</table>
