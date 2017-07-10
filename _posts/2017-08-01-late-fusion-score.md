@@ -47,10 +47,10 @@ $$f(x, y) = SVM(f(x), f(y)) \cdot f(x) \cdot f(y)$$
 * Dataset: Used 50 species from [flower dataset](http://www.imageclef.org/lifeclef/2015/plant) in PlantClef2015 competition
 * Result: Combined two popular CNN models which are AlexNet and GoogleNet.
 
-| Accuracy (%) | AlexNet |  GoogleNet | Max rule | Sum rule  | Product rule  | SVM  | Hybrid |
-|--------------|---------|------------|----------|-----------|---------------|------|--------|
-|Rank 1        |   73.0  |   74.0     | 77.0     |   77.0    | 78.0          | 78.0 | 78.2   |
-|Rank 5        |   90.8  |   91.2     | 93.0     |  93.0     |   93.0        | 92.0 | 93.0   |
+| Accuracy (%)  | AlexNet |  GoogleNet | Max rule | Sum rule  | Product rule  | SVM  | Hybrid |
+| ------------- | ------- | ---------- | -------- | --------- | ------------- | ---- | ------ |
+| Rank 1        |   73.0  |   74.0     | 77.0     |  77.0     | 78.0          | 78.0 | 78.2   |
+| Rank 5        |   90.8  |   91.2     | 93.0     |  93.0     | 93.0          | 92.0 | 93.0   |
 
 
 ### Combinations of multi observations
