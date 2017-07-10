@@ -59,7 +59,8 @@ R1 and R5 are rank 1 and rank 5 accuracy.
 
 * Dataset: Used 50 species from [flower, leaf, entire, branch dataset](http://www.imageclef.org/lifeclef/2015/plant) in PlantClef2015 competition
 * Result:
-...Singe organ
+
+Singe organ
 
 |Organ | R1 (%) | R5 (%) |
 | --- | --- | --- |
@@ -68,7 +69,7 @@ R1 and R5 are rank 1 and rank 5 accuracy.
 |Branch (Br) | 43.2 | 70.4 |
 |Entire (En) | 32.4 | 64.0 |
 
-...Combined pairs of organ based on score of AlexNet
+Combined pairs of organ based on score of AlexNet
 
 |     | Accuracy (%) | Max rule | Sum rule | Product rule | SVM  | Hybrid |
 | --- |  --- | --- | --- | --- | --- | --- |
@@ -87,8 +88,8 @@ R1 and R5 are rank 1 and rank 5 accuracy.
 
 ## 3. Conclusions
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+Tables        | Are           | Cool  
+:-------------------------:|:-------------------------:|:-----:
+col 3 is      | right-aligned | $1600 
+col 2 is      | centered      |   $12 
+zebra stripes | are neat      |    $1 
