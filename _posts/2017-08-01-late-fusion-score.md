@@ -5,7 +5,7 @@ title: Some late fusion techniques based on the score of observations
 "Many heads are better than one". This is how fusion works. There are early fusion, middle fusion and late fusion techniques.
 In this post, I focused to  some late fusion techniques based on the score of observations.
 
-## Late fusion techniques
+## 1. Late fusion techniques
 
 ### Transformation-based approaches
 
@@ -41,7 +41,7 @@ $$f(x, y) = SVM(f(x), f(y))$$
 
 $$f(x, y) = SVM(f(x), f(y)) \cdot f(x) \cdot f(y)$$
 
-## Experiments
+## 2. Experiments
 
 R1 and R5 are rank 1 and rank 5 accuracy.
 
