@@ -10,7 +10,7 @@ title: Computer Science Cheetsheet
 * [Probability Cheatsheet](https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf)
 
 ## Data Structures & Algorithms
-* Demonstration: https://github.com/peace195/python_data_structures_and_algorithms
+* [DEMO](https://github.com/peace195/python_data_structures_and_algorithms)
 * [Big O notation](http://web.mit.edu/16.070/www/lecture/big_o.pdf)
 
 ## Computational theory
