@@ -8,4 +8,5 @@ permalink: /music/
 [Guns N' Roses - November Rain](https://www.youtube.com/watch?v=8SbUC-UaAxE)
 
 [Guns N' Roses - Sweet Child O' Mine](https://www.youtube.com/watch?v=1w7OgIMMRc4)
-																							
+                                                                                            
+[Eagles - Hotel California](https://www.youtube.com/watch?v=lHje9w7Ev4U)
