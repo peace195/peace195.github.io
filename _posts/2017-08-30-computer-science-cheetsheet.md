@@ -26,9 +26,14 @@ title: Computer Science Cheetsheet
 ## Programming techniques
 * [Python Cheetsheet](https://www.dropbox.com/sh/hgpem8skis4k5g3/AAC4fNa5Lu9MqWPzmYyQxFABa?dl=0)
 
+## Design Patterns
+
 ## Artificial Intelligence
 * [MIT Course Number 6.034: Artificial Intelligence](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/index.htm)
 * [Machine Learning - Andrew Ng](https://www.coursera.org/learn/machine-learning)
 * [CSCI 1430: Introduction to Computer Vision](http://cs.brown.edu/courses/cs143/)
 * [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
 * [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/)
+
+
+## System Analysis and Design
