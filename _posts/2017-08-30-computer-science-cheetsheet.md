@@ -10,8 +10,10 @@ title: Computer Science Cheetsheet
 * [Probability Cheatsheet](https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf)
 
 ## Data Structures & Algorithms
-* [DEMO](https://github.com/peace195/python_data_structures_and_algorithms)
+* [python DEMO](https://github.com/peace195/python_data_structures_and_algorithms)
 * [Big O notation](http://web.mit.edu/16.070/www/lecture/big_o.pdf)
+* [MIT Course Number 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [MIT Course Number 6.046J / 18.410J: Design and Analysis of Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm)
 
 ## Computational theory
 
