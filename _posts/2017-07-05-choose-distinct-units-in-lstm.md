@@ -121,5 +121,7 @@ So we has very strong logic inside the model. That is: "All paremeter depend on 
 
 Here are some pictures about batch train accuracy and loss when using masking for bidirectional LSTM model.
 
-:-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/code/accuracy.png)  |  ![](https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/code/loss.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/code/accuracy_loss.png" alt="acc_loss"/>
+</p>
+
