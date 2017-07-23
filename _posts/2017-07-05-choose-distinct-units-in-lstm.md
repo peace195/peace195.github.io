@@ -37,8 +37,9 @@ E.g:
 One of my proposal model is using bidirectional LSTM neural networks. It was be shown like picture below.
 In this model, we only predict polarity label for the aspects in the sentence. But we have one problem is the different position of aspects in different sentence.
 Uhmm, how will we solve it when we can not use the traditional RNN model?
-
+<p align="center">
  <img src="https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/model.png" alt="bilstm"/>
+</p>
 
 Here is the solution. We will use an additional **masking layer** after the LSTM layer.
 It is a binary vector that ís 1.0 for aspect position, 0.0 for the others. We multiply LSTM layer with masking layer.
