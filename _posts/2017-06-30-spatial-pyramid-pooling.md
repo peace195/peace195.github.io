@@ -2,7 +2,7 @@
 title: Upside and downside of spatial pyramid pooling
 ---
 
-Spatial Pyramid Pooling(SPP) [1] is a great idea that do not need resize image before feeding to the neural network.
+Spatial Pyramid Pooling (SPP) [1] is a great idea that do not need resize image before feeding to the neural network.
 In other words, it uses multi-level pooling to adapts multiple image's size and keep the original features of them.
 SPP is inspired from:
 
@@ -39,14 +39,14 @@ def spatial_pyramid_pool(previous_conv, num_sample, previous_conv_size, out_pool
     spp = tf.Variable(tf.truncated_normal([num_sample, ] stddev=0.01))
     
     for i in range(0, len(out_pool_size)):
-        h_strd = image_size[0] / out_pool_size[i]
-        w_strd = image_size[1] / out_pool_size[i]
-        h_wid = image_size[0] - h_strd * out_pool_size[i] + 1
-        w_wid = image_size[1] - w_strd * out_pool_size[i] + 1
+        h_strd = previous_conv_size[0] / out_pool_size[i]
+        w_strd = previous_conv_size[1] / out_pool_size[i]
+        h_wid = previous_conv_size[0] - h_strd * out_pool_size[i] + 1
+        w_wid = previous_conv_size[1] - w_strd * out_pool_size[i] + 1
         max_pool = tf.nn.max_pool(previous_conv,
-                                   ksize=[1,h_wid,w_wid, 1],
-                                   strides=[1,h_strd, w_strd,1],
-                                   padding='VALID')
+                                  ksize=[1,h_wid,w_wid, 1],
+                                  strides=[1,h_strd, w_strd,1],
+                                  padding='VALID')
 								   
         if (i == 0):
             spp = tf.reshape(max_pool, [num_sample, -1])
