@@ -2,8 +2,8 @@
 title: Some late fusion techniques based on the score of observations
 ---
 
-"Many heads are better than one". This is how fusion works. There are early fusion, middle fusion and late fusion techniques.
-In this post, I focused to  some late fusion techniques based on the score of observations.
+"Many heads are better than one". It is how fusion works. There are early fusion, middle fusion, and late fusion techniques.
+In this post, I focused on some late fusion techniques based on the score of observations.
 
 ## 1. Late fusion techniques
 
@@ -20,17 +20,17 @@ Sum rule is also the representative of the transformationbased approaches. Summa
 $$f(x, y) = f(x) + f(y)$$
  
 Product rule is based on the assumption of statistical independence of the representations.
-This assumption is reasonable because observations of a certain class are mutually independent.
+This assumption is reasonable because observations of a particular class are mutually independent.
  
 $$f(x, y) = f(x) \cdot f(y)$$
 
 ### Classification-based approaches
 
 Once the ground-truth species of the training images and the predicted
-class are the identical, they are the positive samples. On
+class are identical, they are the positive samples. On
 the other hand, the actual class of images is different from
-the predict class. They are defined as negative samples. A SVM
-classifier is learnt by using positive and negative
+the predicted class. They are defined as negative samples. An SVM
+classifier is learned by using positive and negative
 training samples in the score space. In the test phase, the
 distance to the decision bound is the measure to decide the
 labels of testing samples.
@@ -62,7 +62,7 @@ Result: Combined two popular CNN models which are AlexNet and GoogleNet.
 
 Dataset: Used 50 species from [flower, leaf, entire, branch dataset](http://www.imageclef.org/lifeclef/2015/plant) in PlantClef2015 competition.
 
-Singe organ
+Single organ
 
 {% highlight plain-text %}
 |  Organ     | R1 (%) | R5 (%) |
@@ -95,5 +95,5 @@ Combined pairs of organ based on score of AlexNet
 ## 3. Conclusions
 
 The experiments show that the fusion techniques increase dramatically the
-performances for the plant identification task. In addition, my hybrid model presents the best results in all
+performances for the plant identification task. Also, my hybrid model presents the best results in all
 evaluation.

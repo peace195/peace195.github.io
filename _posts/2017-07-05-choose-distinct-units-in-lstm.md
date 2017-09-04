@@ -1,16 +1,16 @@
 ---
-title: Choose some distinct units inside the recurrent (LSTM, GRU, ...) layer of recurrent neural networks
+title: Choose some distinct units inside the recurrent (e.g., LSTM, GRU) layer of recurrent neural networks
 ---
 
 When working with a [recurrent neural networks](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/) model, we usually use the last unit or some fixed units of recurrent series to predict the label of observations.
-It was be shown like this picture.
+It was being shown in this picture.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/peace195/peace195.github.io/master/images/rnn.jpg" alt="RNN"/>
 </p>
 
-How about choosing some distinct units inside the recurrent (LSTM, GRU, ...) layer of recurrent neural networks?
-I have worked in some problem need to do that such as **sspect-based sentiment analysis**.
+How about choosing some distinct units inside the recurrent (e.g., LSTM, GRU) layer of recurrent neural networks?
+I have worked in some problem need to do that such as **aspect-based sentiment analysis**.
 In this problem, we have to predict the polarity label of some aspect in a sentence or passage.
 We usually use a tuple (positive, negative or neutral) for the polarity label.
 E.g: 
@@ -24,7 +24,7 @@ E.g:
 </Opinions>
 {% endhighlight %}
 
-* multiple aspect
+* multiple aspects
 
 {% highlight xml tabsize=4%}
 <text>An awesome organic dog, and a conscious eco friendly establishment.</text>
@@ -34,8 +34,8 @@ E.g:
 </Opinions>
 {% endhighlight %}
 
-One of my proposal model is using bidirectional LSTM neural networks. It was be shown like picture below.
-In this model, we only predict polarity label for the aspects in the sentence. But we have one problem is the different position of aspects in different sentence.
+One of my proposed models is using bidirectional LSTM neural networks. It was being shown in the picture below.
+In this model, we only predict polarity label for the aspects in the sentence. But we have one problem is the different position of aspects in the different sentence.
 Uhmm, how will we solve it when we can not use the traditional RNN model?
 <p align="center">
  <img src="https://raw.githubusercontent.com/peace195/aspect-based-sentiment-analysis/master/model.png" alt="bilstm"/>
@@ -43,7 +43,7 @@ Uhmm, how will we solve it when we can not use the traditional RNN model?
 
 Here is the solution. We will use an additional **masking layer** after the LSTM layer.
 It is a binary vector that ís 1.0 for aspect position, 0.0 for the others. We multiply LSTM layer with masking layer.
-Then, we compute softmax, cross entropy and gradient descent as normally.
+Then, we compute softmax, cross entropy, and gradient descent as usually.
 
  <img src="https://raw.githubusercontent.com/peace195/peace195.github.io/master/images/mask.png" alt="bilstm"/>
 
@@ -86,7 +86,7 @@ correct_prediction = tf.reduce_sum(tf.multiply(tf.cast(tf.equal(prediction, tf_y
 **Does masking layer affect the gradient descent when training the model?**
 
 #### Before masking
-As far as we know, some of most important concepts:
+As far as we know, some of the most important concepts:
 
 * Recurrent Neural Networks
 
@@ -118,7 +118,7 @@ $$\hat{y}_t = softmax\big(W^{(S)}l_t\big)$$
 If $$m_t = 0$$ then $$l_t = 1$$. Hence $$\hat{y}_t$$ depends on $$W^{(S)}$$ only.
 Moreover, loss function $$J$$ depends on $$W^{(S)}$$ only too. It does not depend on the none-aspect word $$x_{[t]}$$.
 Finally, the updating process using SGD depends on aspect word mainly because of its impact on softmax layer.
-So we has very strong logic inside the model. That is: "All paremeter depend on the aspect mainly, especially for the last softmax layer using $$W^{(S)}$$ parameter".
+So we have solid  logic inside the model. That is: "All parameter depends on the aspect mainly, especially for the last softmax layer using $$W^{(S)}$$ parameter".
 
 Here are some pictures about batch train accuracy and loss when using masking for bidirectional LSTM model.
 
