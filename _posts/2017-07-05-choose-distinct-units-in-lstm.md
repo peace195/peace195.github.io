@@ -106,5 +106,5 @@ $$l_{t} = h_t \cdot m_t$$
 
 $$\hat{y}_t = softmax\big(W^{(S)}l_t\big)$$
 
-If $$m_t = 0$$ then $$l_t = 1$$. Hence $$\hat{y}_t$$ depends on $$W^{(S)}$$ only.
-Moreover, loss function $$J$$ depends on $$W^{(S)}$$ only too. It does not depend on the none-aspect word $$x_{[t]}$$. Finally, the updating process using SGD depends on aspect word mainly because of its impact on softmax layer. So we have solid  logic inside the model. That is: "All parameter depends on the aspect mainly, especially for the last softmax layer using $$W^{(S)}$$ parameter".
+If $$m_t = 0$$ then $$l_t = 0$$. Hence $$\hat{y}_t$$ depends on $$W^{(S)}$$ only.
+Moreover, loss function $$J$$ depends on $$W^{(S)}$$ only too. It does not depend on the none-aspect word $$x_{[t]}$$. Finally, the updating process using SGD depends on aspect word mainly because of its impact on softmax layer. So we have solid logic inside the model and it is: "All parameter depends on the aspect mainly, especially for the last softmax layer using $$W^{(S)}$$ parameter".

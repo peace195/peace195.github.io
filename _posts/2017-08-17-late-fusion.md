@@ -7,6 +7,7 @@ title: Some deep learning late fusion techniques based on the score of observati
 ## 1. Late fusion techniques
 ### Transformation-based approaches
 Let I define that $$f(x)$$ is the vector score of observation $$x$$ through a prediction model such as softmax layer in Deep Learning. So that $$i = argmax(f(x))$$ is the class that observation belong to.
+
 Max rule:
 
 $$f(x, y) = max(f(x), f(y))$$
