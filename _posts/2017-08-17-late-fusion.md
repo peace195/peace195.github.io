@@ -1,5 +1,5 @@
 ---
-title: Some deep learning late fusion techniques based on the score of observations
+title: Some Deep Learning late fusion techniques based on the score of observations
 ---
 
 "Many heads are better than one". It is how fusion works. There are early fusion, middle fusion, and late fusion techniques. In this post, I focused on some late fusion techniques based on the score of observations.
