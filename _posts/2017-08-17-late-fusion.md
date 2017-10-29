@@ -28,6 +28,7 @@ distance to the decision bound is the measure to decide the labels of testing sa
 $$f(x, y) = SVM(f(x), f(y))$$
 
 ### My proposal hybrid model
+
 $$f(x, y) = SVM(f(x), f(y)) \cdot f(x) \cdot f(y)$$
 
 ## 2. Experiments
