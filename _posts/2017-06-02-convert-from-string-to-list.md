@@ -3,7 +3,7 @@ title: Convert a string representation of list to list in Python
 ---
 
 Preprocess data is a big step when you do a machine learning problem.
-In this post, I will show a trick to import text data such as word embeddings, a dictionary of lists ..., which usually has a format likes:
+In this post, I will show a trick to import text data such as word embeddings, a dictionary of lists, which usually has a format likes:
 
 {% highlight plain-text %}
 cat: [1, 1.2, 3, 4, 6.2]
