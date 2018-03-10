@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: Computer Science Cheetsheet
 ---
@@ -78,4 +77,3 @@ title: Computer Science Cheetsheet
 
 
 ## System Analysis and Design
->>>>>>> parent of 0abb2d5... osx

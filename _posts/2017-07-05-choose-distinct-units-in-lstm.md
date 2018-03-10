@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: Choose some distinct units inside the recurrent (e.g., LSTM, GRU) layer of Recurrent Neural Networks
 ---
@@ -220,4 +219,3 @@ $$\hat{y}_t = softmax\big(W^{(S)}l_t\big)$$
 
 If $$m_t = 0$$ then $$l_t = 0$$. Hence $$\hat{y}_t$$ depends on $$W^{(S)}$$ only.
 Moreover, loss function $$J$$ depends on $$W^{(S)}$$ only too. It does not depend on the none-aspect word $$x_{[t]}$$. Finally, the updating process using SGD depends on aspect word mainly because of its impact on softmax layer. So we have solid logic inside the model and it is: "All parameter depends on the aspect mainly, especially for the last softmax layer using $$W^{(S)}$$ parameter".
->>>>>>> parent of 0abb2d5... osx

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: Structure programming versus Object-oriented programming in Deep Learning
 ---
@@ -186,4 +185,3 @@ def main():
 if __main__ == '__main__':
     main()
 {% endhighlight %}
->>>>>>> parent of 0abb2d5... osx

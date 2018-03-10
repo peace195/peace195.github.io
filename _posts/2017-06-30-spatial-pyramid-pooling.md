@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: Upside and downside of Spatial Pyramid Pooling
 ---
@@ -134,4 +133,3 @@ I have just analysis some idea of SPP. SPP is a beautiful idea that combines cla
 
 ## References
 [1] [Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition](https://arxiv.org/abs/1406.4729)
->>>>>>> parent of 0abb2d5... osx

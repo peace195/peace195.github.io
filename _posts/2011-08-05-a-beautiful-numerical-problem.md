@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: A beautiful numerical problem using reductio ad absurdum
 ---
@@ -168,4 +167,3 @@ $$\Rightarrow$$ Exist a prime number $$q \not\in X$$
 that satisfies $$q|P-Q|a^n+b^n-c^n$$.
 
 It is a contradiction. The problem is solved.
->>>>>>> parent of 0abb2d5... osx
