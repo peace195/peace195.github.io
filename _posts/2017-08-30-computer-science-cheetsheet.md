@@ -26,6 +26,8 @@ title: Computer Science Cheetsheet
 ## Programming techniques
 * [Python Cheetsheet](https://www.dropbox.com/sh/hgpem8skis4k5g3/AAC4fNa5Lu9MqWPzmYyQxFABa?dl=0)
 
+## Database, Big data
+
 ## Design Patterns
 
 ## Artificial Intelligence
