@@ -1,6 +1,0 @@
----
-title: Review Technical University of Munich
----
-TUM, mình chỉ muốn nói 3 từ về nó và về cả thành phố Munich: đẳng cấp, chuyên nghiệp và tuyệt vời.
-
-Dịp sau sang châu Âu chơi nhất định mình sẽ ghé qua TUM Informatik chơi cầu trượt.
